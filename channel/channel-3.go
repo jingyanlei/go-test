@@ -16,7 +16,7 @@ func main()  {
 		//方式一chan关闭后自动退出for
 		for s := range c {
 			//fmt.Println("chan:",len(c)+1)
-			fmt.Println("读取" ,s)
+			fmt.Println("读取chan " ,s)
 			time.Sleep(time.Second)
 		}
 		fmt.Println("chan close")
