@@ -1,0 +1,4 @@
+mode: set
+go-test/test/t.go:9.14,12.2 1 1
+go-test/test/t.go:14.15,19.2 4 1
+go-test/test/t.go:21.15,26.2 4 0
