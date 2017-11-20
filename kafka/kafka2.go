@@ -7,7 +7,7 @@ import (
 	"gopkg.in/bsm/sarama-cluster.v1"
 	"time"
 	"strings"
-):q
+)
 
 var brokers = "127.0.0.1:9092"
 var zks = "127.0.0.1:2181"
