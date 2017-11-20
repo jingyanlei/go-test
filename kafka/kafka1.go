@@ -23,6 +23,14 @@ var (
 	logger = log.New(os.Stderr, "", log.LstdFlags)
 )
 
+// 此版本kafka自己维护offset，由于需要其它程序也要使用，需要更新offset到zk中
+// 更新至最大offset
+// kafka-run-class.sh kafka.tools.UpdateOffsetsInZK latest consumer.properties my-topic4
+// 更新至最小offset
+// kafka-run-class.sh kafka.tools.UpdateOffsetsInZK earliest consumer.properties my-topic4
+// 更新到指定offset
+// zkCli.sh
+// set /consumers/my-group4/offsets/my-topic4/4 0
 func main() {
 	flag.Parse()
 	
