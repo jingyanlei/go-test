@@ -67,6 +67,7 @@ func consume(client *sarama.Client, n int, cb func(*sarama.ConsumerMessage)) err
 	config := cluster.Config{
 		CommitEvery: time.Second,
 		DefaultOffsetMode: sarama.OffsetNewest,
+		ZKSessionTimeout: time.Second * 30,
 	}
 	
 	//consumer, err := cluster.NewConsumerFromClient(client, []string{"localhost:2181"}, "my-group", []string{"my-topic"}, &config)
