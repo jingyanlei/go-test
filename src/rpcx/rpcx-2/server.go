@@ -4,7 +4,7 @@ import (
 	"flag"
 	"context"
 	"github.com/smallnest/rpcx/server"
-	"go-test/rpcx/services"
+	"go-test/src/rpcxrpcx/services"
 )
 
 var (

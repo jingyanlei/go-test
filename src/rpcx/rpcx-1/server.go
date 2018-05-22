@@ -3,7 +3,7 @@ package main
 import (
 	"github.com/smallnest/rpcx/server"
 	"flag"
-	"go-test/rpcx/services"
+	"go-test/src/rpcxrpcx/services"
 )
 
 var (

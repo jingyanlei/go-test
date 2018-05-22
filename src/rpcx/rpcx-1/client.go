@@ -5,7 +5,7 @@ import (
 	"github.com/smallnest/rpcx/client"
 	"context"
 	"log"
-	"go-test/rpcx/services"
+	"go-test/src/rpcxrpcx/services"
 )
 
 var (
