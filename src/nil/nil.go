@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 func main()  {
 
@@ -64,4 +67,6 @@ fmt.Println("------------")
 	fmt.Println(len(maps))
 	fmt.Println(maps)
 
+
+	fmt.Println(time.Unix(1526639222, 0).Format("20060102"))
 }
