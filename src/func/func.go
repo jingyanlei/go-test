@@ -16,12 +16,14 @@ func main()  {
 
 
 	i1 := myInt(1)
+	fmt.Println(i1)
 	i2 := i1.add(2)
 	fmt.Println(i1)
 	fmt.Println(i2)
 
 
 	a1 := myInt2(1)
+	fmt.Println(a1)
 	a2 := a1.add(2)
 	fmt.Println(a1, a2)
 

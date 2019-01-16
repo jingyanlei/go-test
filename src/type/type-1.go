@@ -38,7 +38,15 @@ func main()  {
 	testString(str2)
 	fmt.Println(str, str2)
 	fmt.Println(&str, &str2)
-	
+
+
+	maps := make(map[string]string, 0)
+	maps["a"] = "a"
+	maps["b"] = "b"
+	maps["c"] = "c"
+	maps["d"] = "d"
+	maps["e"] = "e"
+
 }
 
 // map
