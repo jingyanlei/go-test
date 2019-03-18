@@ -1,0 +1,5 @@
+dome-39.go
+defer  recover() 仅在 defer 执行的函数中调用才会生效 ？？？
+
+dome-42.go
+slice 截取 分配长度问题 ？？？
