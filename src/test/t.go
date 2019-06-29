@@ -16,7 +16,7 @@ func test2()  {
 	i := 1
 	name := "jingyanlei"
 	age := 18
-	fmt.Sprintf("i:%d, name:%s, age:%d", i, name, age)
+	fmt.Printf("i:%d, name:%s, age:%d", i, name, age)
 }
 
 func test3()  {
