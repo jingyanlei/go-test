@@ -4,9 +4,9 @@ import (
 	"container/list"
 )
 
-type alarmChan chan string
-
-var alarmChans = make(alarmChan, 10)
+type AlarmMsg string
+type alarmChan chan AlarmMsg
+var AlarmsChan= make(alarmChan, 10)
 
 type Alarm interface {
 	Attach(Observer) //注册观察者
@@ -21,7 +21,7 @@ type Observer interface {
 //implements Subject
 type ConcreteAlarm struct {
 	observers *list.List
-	value     int
+	value     AlarmMsg
 }
 
 //
@@ -50,11 +50,11 @@ func (s *ConcreteAlarm)Notify() {
 	}
 }
 
-func (s *ConcreteAlarm)SetValue(value int)  {
+func (s *ConcreteAlarm)SetValue(value AlarmMsg)  {
 	s.value = value
 	s.Notify()
 }
 
-func (s *ConcreteAlarm)GetValue() int {
+func (s *ConcreteAlarm)GetValue() AlarmMsg {
 	return s.value
 }
