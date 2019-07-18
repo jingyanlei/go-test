@@ -43,6 +43,7 @@ fmt.Println("------------")
 	// 初始化长度为10的切片
 	var ips_3 = make([]string, 10)
 	fmt.Println(len(ips_3))
+	fmt.Println(cap(ips_3))
 	if ips_3 == nil {
 		fmt.Println("切片空")
 	} else {
@@ -54,6 +55,9 @@ fmt.Println("------------")
 	// 增加
 	ips_3 = append(ips_3, "增加11")
 	fmt.Println(ips_3[10])
+	fmt.Println(len(ips_3))
+	fmt.Println(cap(ips_3))
+	fmt.Println(ips_3)
 
 fmt.Println("------------")
 
@@ -67,6 +71,7 @@ fmt.Println("------------")
 	fmt.Println(len(maps))
 	fmt.Println(maps)
 
+fmt.Println("------------")
 
 	fmt.Println(time.Unix(1526639222, 0).Format("20060102"))
 }
